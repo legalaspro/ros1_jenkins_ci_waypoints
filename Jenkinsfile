@@ -4,6 +4,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'echo running tests'
+        echo "test1"
       }
     }
   }
