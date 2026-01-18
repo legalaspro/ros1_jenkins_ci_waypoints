@@ -1,0 +1,18 @@
+# Pinned for Jenkins 2.479.3
+
+git:5.7.0
+github:1.43.0
+
+# Multibranch for GitHub 
+github-branch-source:1824.v046257273408
+
+# Publish GitHub Checks (PR checks UI)
+github-checks:602.v264a_83610da_6
+
+# Pipelines + RBAC
+workflow-aggregator:608.v67378e9d3db_1
+role-strategy:848.va_a_ea_673cf0b_c
+
+# Optional:
+# docker-workflow:634.vedc7242b_eda_7
+# credentials-binding:702.vfe613e537e88
