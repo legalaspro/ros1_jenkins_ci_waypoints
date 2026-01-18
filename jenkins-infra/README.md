@@ -6,6 +6,20 @@ Scripts and documentation for bootstrapping Jenkins and connecting it to GitHub 
 
 ---
 
+## Quick Access (Construct)
+
+To launch Jenkins and view all CI jobs:
+
+```bash
+cd jenkins-infra/scripts
+bash jenkins_bootstrap.sh
+cat ~/jenkins_pid_url.txt
+```
+
+Open the URL and login with `test` / `test`. All jobs, build history, and logs are visible.
+
+---
+
 ## Quick Start
 
 ### 1. Run the bootstrap script
@@ -62,6 +76,8 @@ SMEE_URL="https://smee.io/yourchannel" bash start_smee.sh
 ---
 
 ## Notes
+
+- **Test user**: A read-only user is available for viewing jobs: username `test`, password `test`.
 
 - **Smee forwarder**: Useful when Jenkins runs on a dynamic or private machine that GitHub cannot reach directly (e.g., cloud VMs with changing IPs, machines behind firewalls). [smee.io](https://smee.io) provides a stable public URL that forwards webhook events to your local Jenkins. Set `SMEE_URL` in `.bashrc` for automatic startup.
 
