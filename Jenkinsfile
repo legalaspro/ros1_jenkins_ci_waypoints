@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'legalaspro/tortoisebot-noetic-waypoints-ci'
-        GAZEBO_STARTUP_TIMEOUT = '60'  
+        GAZEBO_STARTUP_TIMEOUT = '90'  
     }
 
     stages {
